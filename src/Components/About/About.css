@@ -1,0 +1,46 @@
+.about{
+    padding: 0 3rem 0 0rem;
+    display: flex;
+    height: 90vh;
+    margin-bottom: 8rem;
+    margin-top: 9rem;
+}
+.about-me{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.about-me>:nth-child(1){
+    color: var(--black);
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.about-me>:nth-child(2){
+    color: var(--purple);
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.about-me>:nth-child(3){
+    color: var(--gray);
+    font-size: 14px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.a-button{
+    width: 8rem;
+    height: 2rem;
+}
+@media screen and (max-width: 480px){
+    .about{
+        margin-top: 0;
+        flex-direction: column;
+        gap: 5rem;
+        height: 60rem;
+        padding: 0;
+    }
+    .card{
+        display: none;
+        
+    }
+   
+}

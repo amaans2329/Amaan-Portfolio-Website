@@ -1,0 +1,64 @@
+.works {
+  height: 90vh;
+}
+.s-right {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainCircle {
+  width: 45rem;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  
+}
+
+.secCircle {
+  width: 70px; /* Adjust the size of each image container */
+  height: 70px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Ensure the image stays within the circular container */
+  margin: 0 5px; /* Adjust the spacing between the images */
+  cursor: pointer;
+}
+
+.secCircle > img {
+  width: 100%; /* Ensure the image fills its container */
+  height: auto; /* Maintain the image's aspect ratio */
+  border-radius: 50%; /* Apply round shape to the image */
+}
+@media (max-width: 480px) {
+  .works {
+    height: auto;
+  }
+
+  .s-right {
+    justify-content: flex-start;
+  }
+
+  .mainCircle {
+    width: 100%;
+    height: auto;
+    border-radius: 0;
+  }
+
+  .secCircle {
+    width: 50px;
+    height: 50px;
+    margin: 0 3px;
+  }
+}
+
+
+  
