@@ -19,9 +19,9 @@ const About = () => {
           <br />
           I am eager to contribute my skills and creativity to create engaging user experiences on the web.
         </span>
-        <motion.a href={Resume} download={Resume}>
+        <a href={Resume} download={Resume}>
           <button className="button a-button">Download Resume</button>
-        </motion.a>
+        </a>
       </div>
       {/* right side */}
       <div className="card"></div>
